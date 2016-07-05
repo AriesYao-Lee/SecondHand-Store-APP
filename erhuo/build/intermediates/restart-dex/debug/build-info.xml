@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="439898986892462"
+    token="1175640832706976825" >
+
+    <task
+        name="javac"
+        duration="3800" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="1853" />
+    <task
+        name="verifier"
+        duration="252" />
+
+    <artifact
+        location="C:\Users\cxdn\Desktop\erhuo\build\outputs\apk\erhuo-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="439898986892462" >
+        <artifact
+            location="C:\Users\cxdn\Desktop\erhuo\build\outputs\apk\erhuo-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_5237daa1fa6ad5624887142f3c5cb5d8abd3f8a2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_e53ca16c3a3d504656d5404645712dc9904f89c5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1a29a8535629f7fac01364d880f3d00584cda7b1">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_49c8966f231c256d8601eefcb9cd5d50c75ab48c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="17fa6eff55d3d0ef043eeea26f210664ee3b9555">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c558b1458fd5d8341322c32070842d552eb99483\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_69813fd76e66ddf0e6aa3d708c7ccead4de272bd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_597b54fe825d690888b4832a0a85bbd165d025e2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\libs\org.apache.http.legacy.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="fa331331b626ee78c52bea16ce1e34b39e666ce5">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\2\org.apache.http.legacy_617a1081f1e678649cc4d6052c6281eeb50f6f42\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_8f19a69206fe844a2c13d8344df9ddbf910eb263\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\libs\android-support-v4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="91a1b1aabf740a6f64c2f73f5b0dc6611779ac8b">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v4_d0561d9208d218836e621c1467c28928ed18ad58\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_874a101747d133bb54bc57997da35ebb5cfda8f7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\exploded-aar\erhuo\IMKit\unspecified\jars\libs\Rong_IMKit_v2_6_0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d5279ade24b562c890244ade1255c7409f310617">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\8\Rong_IMKit_v2_6_0_d8a09dd8342fbbeeaab1099be95eec0b121040b9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_70127d22522381d8fbc65875794117f9eab40ef1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\cxdn\Desktop\erhuo\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\cxdn\Desktop\erhuo\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_1e9e1841674bdf8479d2ebb16d564ac459a9fe4a\classes.dex" />
+    </item>
+
+</items>

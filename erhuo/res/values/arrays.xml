@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="types">
+    <item>二手书</item>
+    <item>电脑配件</item>
+    <item>手机电脑</item>
+    <item>服饰配饰</item>
+    <item>出行装备</item>
+    <item>宿舍神器</item>
+    <item>杂物</item>
+</string-array>
+</resources>

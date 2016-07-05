@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="300dp"
+android:layout_height="match_parent"
+android:layout_gravity="center_horizontal"
+android:stretchColumns="1" >
+<!-- ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="fitCenter"
+    android:src="@drawable/ic_launcher"
+    android:contentDescription="@string/hello"/-->
+<TextView
+    android:text="@string/order_msg"
+    android:id="@+id/ordertitle"
+    android:textSize="@dimen/label_font_size"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/title_padding"/>
+<!-- 输入交易时间的行 -->
+<TableRow>
+    <TextView
+        android:text="@string/time"
+        android:textSize="@dimen/label_font_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/ordertime"
+        android:background="@drawable/bg_edittext"
+        android:labelFor="@id/ordertime"
+        android:inputType="datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</TableRow>
+<!-- 输入交易地点的行 -->
+<TableRow>
+    <TextView
+        android:text="@string/place"
+        android:textSize="@dimen/label_font_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:text=""
+        android:id="@+id/orderplace"
+        android:background="@drawable/bg_edittext"
+        android:inputType="text"
+        android:labelFor="@id/orderplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</TableRow>
+    <!-- 输入联系电话的行 -->
+    <TableRow>
+        <TextView
+            android:text="@string/phone_num"
+            android:textSize="@dimen/label_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/phonenumber"
+            android:background="@drawable/bg_edittext"
+            android:inputType="phone"
+            android:labelFor="@id/phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+<!-- 定义确定、取消按钮的行 -->
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <Button
+        android:id="@+id/bnConfirmOrder"
+        android:text="@string/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bnCancelOrder"
+        android:text="@string/get_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</TableLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mydeliver"
+            android:title="@string/menu_mydeliver" />
+        <item
+            android:id="@+id/nav_myorder"
+            android:title="@string/menu_myorder" />
+        <item
+            android:id="@+id/nav_myfavor"
+            android:title="@string/menu_myfavor" />
+        <item
+            android:id="@+id/nav_mymsg"
+            android:title="@string/menu_mymsg" />
+    </group>
+
+    <item android:title="@string/memu_func">
+        <menu>
+            <item
+                android:id="@+id/nav_deliver"
+                android:title="@string/memu_deliver" />
+            <item
+                android:id="@+id/nav_manage"
+                android:title="@string/menu_manageuser" />
+            <item
+                android:id="@+id/nav_quit"
+                android:title="@string/memu_quit" />
+
+        </menu>
+    </item>
+
+</menu>

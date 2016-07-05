@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.erhuo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+    <!-- 授予读写外部存储设备的访问权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- 获取联系人信息，demo中演示发送通讯录消息 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+ <!-- GCM 配置开始 < -->
+    <permission
+        android:name="io.rong.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="io.rong.app.permission.C2D_MESSAGE" />
+ <!-- GCM 配置结束 < -->
+    <!-- 小米 配置开始 < -->
+    <permission
+        android:name="io.rong.app.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="io.rong.app.permission.MIPUSH_RECEIVE" />
+
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        name="com.example.erhuo.App"
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.erhuo.Register"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.erhuo.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.erhuo.MainPage"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".ResultPage" />
+        </activity>
+        <activity
+            android:name="com.example.erhuo.TypePage"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.erhuo.OrderDetails"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.example.erhuo.ResultPage" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.erhuo.PersonalDelivered"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.erhuo.PersonalInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.erhuo.ManageInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.erhuo.PersonalFavored"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.erhuo.PersonalOrder"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.erhuo.ItemPage"
+            android:label="@string/welcome" >
+        </activity>
+        <activity
+            android:name="com.example.erhuo.DeliverItem"
+            android:label="@string/welcome" >
+        </activity>
+        <activity
+            android:name="com.example.erhuo.OrderPage"
+            android:label="@string/welcome" >
+        </activity>
+        <activity android:name="com.example.erhuo.ConverHome" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.erhuo.ConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.erhuo"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.erhuo.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.erhuo"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="sfci50a7cvm3i" />
+
+        <activity
+            android:name="com.example.erhuo.activity.PictureSelectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.erhuo.activity.PicturePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.erhuo.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.erhuo.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:exported="true"
+            android:process=":ipc" >
+        </service>
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="sfci50a7cvm3i" />
+        <!-- end -->
+
+
+        <!-- 必选： SDK 核心功能 -->
+        <service
+            android:name="io.rong.push.core.PushRegistrationService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="io.rong.push.PushService"
+            android:exported="false"
+            android:process="io.rong.push" >
+        </service>
+        <service
+            android:name="io.rong.push.core.MessageHandleService"
+            android:exported="true" >
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push" >
+            <intent-filter>
+                <action android:name="io.rong.push.intent.action.HEART_BEAT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 必选： SDK 核心功能 -->
+
+        <activity
+            android:name="io.rong.imkit.activity.PictureSelectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.activity.PicturePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

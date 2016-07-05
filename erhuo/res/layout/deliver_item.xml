@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:stretchColumns="1" >
+
+    <TextView
+        android:text="@string/item_info"
+        android:id="@+id/iteminfo"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+    <!-- 输入商品名称的行 -->
+    <TableRow>
+        <TextView
+            android:text="@string/item_name"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/deliveritemname"
+            android:inputType="text"
+            android:labelFor="@id/deliveritemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <!-- 输入商品描述的行 -->
+    <TableRow>
+        <TextView
+            android:text="@string/item_desc"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+         <EditText
+            android:id="@+id/deliveritemdescription"
+            android:inputType="text"
+            android:labelFor="@id/deliveritemdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </TableRow>
+    <!-- 输入价格的行 -->
+    <TableRow>
+        <TextView
+            android:text="@string/price"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/deliveritemprice"
+            android:inputType="numberDecimal"
+            android:labelFor="@id/deliveritemprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <!-- 输入商品种类的行 -->
+    <TableRow>
+        <TextView
+            android:text="@string/item_type"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+         <Spinner
+            android:id="@+id/deliveritemtype"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textSize="18sp"
+            android:entries="@array/types"
+            />
+       
+    </TableRow>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+        <TableRow>
+            <Button
+                android:id="@+id/choosepicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_pic"/>
+        </TableRow>
+    </TableLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"/>
+    <!-- 定义确定、取消按钮的行 -->
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/bnDeliverItem"
+            android:text="@string/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/bnCancelDeliver"
+            android:text="@string/get_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>"
+    </LinearLayout>
+</TableLayout>
